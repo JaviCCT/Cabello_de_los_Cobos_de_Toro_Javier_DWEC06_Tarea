@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sistema de Alquiler</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  
+  <header class="bg-primary text-white p-3">
+    <div class="container">
+      <h1>Sistema de Alquiler</h1>
+      <nav class="nav">
+        <a class="nav-link text-white" href="#categories">Categorias</a>
+        <a class="nav-link text-white" href="#locations">Localizaciones</a>
+        <a class="nav-link text-white" href="#vehicles">Vehiculos</a>
+        <a class="nav-link text-white" href="#customers">Clientes</a>
+        <a class="nav-link text-white" href="#rentals">Alquileres</a>
+        <a class="nav-link text-white" href="#search">Buscador</a>
+        <a class="nav-link text-white" href="#close-windows">Cerrar ventanas</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container mt-4">
+    <div class="row">
+      <main class="col-md-9">
+        <section id="content">
+          <!-- Aqui aparece el contenido dinamico -->
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <footer class="bg-light text-center p-3 mt-4">
+    <div class="container">
+      <p>© 2025 Sistema de Alquiler Javier Cabello de los Cobos</p>
+    </div>
+  </footer>
+
+  <!-- Modal para iterador -->
+  <div class="modal fade" id="itemModal" tabindex="-1" aria-labelledby="itemModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="itemModalLabel">Elemento</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body" id="itemModalBody">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary" id="modalNext">Siguiente</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+          integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+          crossorigin="anonymous"></script>
+
+  <script type="module" src="js/Exceptions.js"></script>
+  <script type="module" src="js/Vehicle.js"></script>
+  <script type="module" src="js/Category.js"></script>
+  <script type="module" src="js/Coordinate.js"></script>
+  <script type="module" src="js/Customer.js"></script>
+  <script type="module" src="js/Rental.js"></script>
+  <script type="module" src="js/Location.js"></script>
+  <script type="module" src="js/RentalManager.js"></script>
+  <script type="module" src="js/ut05.js"></script>
+  <script type="module" src="js/ut06.js"></script>
+</body>
+</html>
