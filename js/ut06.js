@@ -1,7 +1,7 @@
 import { RentalManager } from './RentalManager.js';
 import { Category } from './Category.js';
 import { Location } from './Location.js';
-import { Car, Bike, Van } from './Vehicle.js';º
+import { Car, Bike, Van } from './Vehicle.js';
 
 $(document).ready(function () {
   const rm = RentalManager.getInstance();
